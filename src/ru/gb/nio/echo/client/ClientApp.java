@@ -1,4 +1,4 @@
-package lesson1;
+package ru.gb.nio.echo.client;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -7,13 +7,13 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 import java.util.Scanner;
 
-public class Client {
+public class ClientApp {
 
     public static final String HOSTNAME = "localhost";
     public static final int PORT = 9000;
 
     public static void main(String[] args) throws IOException {
-        new Client().start();
+        new ClientApp().start();
     }
 
     private void start() throws IOException {
